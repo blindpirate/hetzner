@@ -110,7 +110,7 @@ class Reset(object):
         else:
             raise ConnectError("Server keeps playing dead after reboot :-(")
 
-    def reboot(self, mode='soft'):
+    def reboot(self, mode='hard'):
         """
         Reboot the server, modes are "soft" for reboot by triggering Ctrl-Alt-
         Del, "hard" for triggering a hardware reset and "manual" for requesting

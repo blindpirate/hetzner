@@ -48,7 +48,7 @@ class Reboot(SubCommand):
     description = "Reboot a server"
     option_list = [
         make_option('-m', '--method', dest='method',
-                    choices=['soft', 'hard', 'manual'], default='soft',
+                    choices=['soft', 'hard', 'manual'], default='hard',
                     help="The method to use for the reboot"),
         make_option('ip', metavar='IP', nargs='+',
                     help="IP address of the server to reboot"),
