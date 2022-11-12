@@ -127,7 +127,7 @@ class RescueSystem(object):
         Look at Server.observed_reboot() for options.
         """
         self.activate(authorized_keys=kwargs.pop('authorized_keys', None))
-        self.server.observed_reboot(*args, **kwargs)
+        # self.server.observed_reboot(*args, **kwargs)
 
     def observed_deactivate(self, *args, **kwargs):
         """
